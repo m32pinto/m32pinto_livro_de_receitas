@@ -52,6 +52,8 @@ Esse repositório servirá para facilitar a análise de dados, e criação de sc
 
     # Lê um arquivo CSV e armazena em um DataFrame (tabela estruturada do pandas)
     # './local_do_arquivo.csv' deve ser substituído pelo caminho real do seu arquivo
+    # Atenção no tipo de arquivo: read_csv, execel, odf
+    
     df = pd.read_csv('./local_do_arquivo.csv')
 
     # 💡 Dica: Sempre verifique as primeiras linhas após o carregamento
