@@ -27,32 +27,32 @@
     # 5️⃣ Converte para float. Erros viram NaN silenciosamente
     return pd.to_numeric(s, errors='coerce')
 
-# Carrega os dados
-titanic = pd.read_csv("./banco_de_dados/valores_em_real_para_treino.csv")
-
-print("="*60)
-print(" DADOS ORIGINAIS")
-print("="*60)
-print(titanic["valor"].head())
-print(f"Tipo original: {titanic['valor'].dtype}\n")
-
-# Aplica a função corrigida
-titanic["valor_limpo"] = padronizar_moeda_br(titanic["valor"], nome_coluna="valor")
-
-print("="*60)
-print("✅ VALORES CONVERTIDOS (FLOAT PURO)")
-print("="*60)
-print(titanic["valor_limpo"].head())
-print(f"Tipo após conversão: {titanic['valor_limpo'].dtype}\n")
-
-print("="*60)
-print(" COMPARAÇÃO LADO A LADO")
-print("="*60)
-print(titanic[["valor", "valor_limpo"]].head(6))
-
-print(f"\n❓ Valores nulos restantes: {titanic['valor_limpo'].isna().sum()}")
-print(f"📈 Média calculada: R$ {titanic['valor_limpo'].mean():,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.'))
-
+    # Carrega os dados
+    titanic = pd.read_csv("./banco_de_dados/valores_em_real_para_treino.csv")
+    
+    print("="*60)
+    print(" DADOS ORIGINAIS")
+    print("="*60)
+    print(titanic["valor"].head())
+    print(f"Tipo original: {titanic['valor'].dtype}\n")
+    
+    # Aplica a função corrigida
+    titanic["valor_limpo"] = padronizar_moeda_br(titanic["valor"], nome_coluna="valor")
+    
+    print("="*60)
+    print("✅ VALORES CONVERTIDOS (FLOAT PURO)")
+    print("="*60)
+    print(titanic["valor_limpo"].head())
+    print(f"Tipo após conversão: {titanic['valor_limpo'].dtype}\n")
+    
+    print("="*60)
+    print(" COMPARAÇÃO LADO A LADO")
+    print("="*60)
+    print(titanic[["valor", "valor_limpo"]].head(6))
+    
+    print(f"\n❓ Valores nulos restantes: {titanic['valor_limpo'].isna().sum()}")
+    print(f"📈 Média calculada: R$ {titanic['valor_limpo'].mean():,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.'))
+    
 Como posso melhorar essa função, para quando eu acionar ela no pandas eu possa apenas selecionar a coluna seguindo:
 padronizacao_para_float = nome_do_arquivo["nome_da_coluna"]
 
