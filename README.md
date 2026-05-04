@@ -2,35 +2,47 @@
 
 Esse repositório servirá para facilitar a análise de dados, e criação de scripts, contém requisitos básicos para processamentos eficientes e boas práticas.
 
-##  Cabeçalho e rodapé padrão
+## Procedimento padrão
 
-    #!/usr/bin/env python3
-    # -*- coding: utf-8 -*-
+    # >>> Criar ambiente virtual.
+    python3 -m venv ambiente_virtual
+
+    # >>> Iniciar ambiente virtual.
+    source ambiente_virtual/bin/activate  
+
+    # >>> Criar requeriments.txt
+    # >> Nota: Crie antes o arquivo.
+    pip freeze > requirements.txt 
+
+    # >>>Instalar requirements de um projeto.
+    # >> Nota: Para projetos que já possuem um requeriments.txt.
+	pip3 install -r requirements.txt
+
+##  Cabeçalho e rodapé padrãos
+    """
+    📁 Nome do arquivo: | 👤 m32pinto | 🔄 Repyta 
+    🎯 Objetivo
 
     """
 
-    📁 ${FILENAME} | 👤 m32pinto | 🔄 Repyta | 🗓️ ${DATE}
-    🎯 ${1:Objetivo em uma linha}
+    # >>> CONFIG INICIAL.
 
+
+
+
+    # >>> CÓDIGO.
+
+
+
+
+    # >>> FIM.
+    
     """
-
-    # >>> CONFIG INICIAL
-
-    %matplotlib inline
-    import pandas as pd, matplotlib.pyplot as plt, os
-    plt.style.use('ggplot'); plt.rcParams['figure.figsize'] = (15, 5)
-
-    # >>> SEU CÓDIGO AQUI
-
-    $0
-
-    # >>> FIM: ✅ OK | 🧪 Testar: [ ] Leitura [ ] Processamento [ ] Saída
+    Prompts:
+    """
 
 ## Importações.
 ### Sempre que inicar um projeto:
-
-    # Renderize nossos gráficos em linha
-    %matplotlib inline
 
     import pandas as pd
     import matplotlib.pyplot as plt
@@ -123,6 +135,11 @@ Esse repositório servirá para facilitar a análise de dados, e criação de sc
 [Os](https://docs.python.org/3/library/os.html)
 
 [Matplotlib](https://matplotlib.org/stable/)
+
+## Códigos interessantes para zorin os
+
+    # Apagar a tela
+    xset dpms force off
 
 
 
