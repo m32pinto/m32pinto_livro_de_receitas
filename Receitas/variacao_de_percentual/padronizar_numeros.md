@@ -5,26 +5,26 @@
         Converte strings no formato de moeda brasileira (ex: 'R$ 1.250,00')
         para float. Blindada contra espaços invisíveis (\xa0) do Excel/CSV.
         """
-        # 1️⃣ Validação de dados vazios
+        # 1 Validação de dados vazios
         dados_validos = series.notna() & (series.astype(str).str.strip() != '')
         qtd_vazios = (~dados_validos).sum()
         if qtd_vazios > 0:
             print(f"️  Detectados {qtd_vazios} valor(es) vazio(s)/NaN na coluna '{nome_coluna}'.")
 
-    # 2️ Garante string e remove espaços nas extremidades
+    # 2 Garante string e remove espaços nas extremidades
     s = series.astype(str).str.strip()
 
-    # 3️⃣ Remove 'R$' e TODOS os tipos de espaço (incluindo o \xa0 do Excel)
+    # 3 Remove 'R$' e TODOS os tipos de espaço (incluindo o \xa0 do Excel)
     s = s.str.replace('R$', '', regex=False)
     s = s.str.replace(r'\s+', '', regex=True)  # 🔑 CORREÇÃO CRÍTICA
 
-    # 4️⃣ Normaliza separadores brasileiros
+    # 4 Normaliza separadores brasileiros
     s = s.where(
         ~s.str.contains(',', regex=False),
         s.str.replace('.', '', regex=False).str.replace(',', '.', regex=False)
     )
 
-    # 5️⃣ Converte para float. Erros viram NaN silenciosamente
+    # 5 Converte para float. Erros viram NaN silenciosamente
     return pd.to_numeric(s, errors='coerce')
 
     # Carrega os dados
