@@ -3,10 +3,10 @@ O que aprenderemos
 
 - Leitura.
 - Impressão de dados brutos.
-- quantidades de linhas na colunas selecionada.
+- Quantidades de linhas na colunas selecionada.
 - Seleção de colunas específicas do dataframe.
 - Solicitar o tipo de dado na coluna selecionada.
-- Solicitar quantidades de linhas na coluna selecionada.-
+- Solicitar quantidades de linhas na coluna selecionada.
 - Seleção de múltiplas colunas.
 
 #
@@ -39,13 +39,13 @@ O que aprenderemos
     # Solicitar quantidades de linhas e colunas no dataframe. #col #col
 
     solicitar_em_#col_valores_maiores_que_#num = df[df["#"] > #num]
-    #Estou interessado nos valores maiores que 35 dessa coluna imprima todos. #com #nim
+    #Estou interessado nos valores maiores que 35 dessa coluna imprima todos. #com #num
 
     solicitar_em_#col_valores_maiores_que_#num_saida_em_booleanos = df["#"] > #num]
     #Estou interessado nos valores maiores que 35 dessa coluna imprima todos saída em booleanos. #col #num
 
     valores_na_coluna_#col_nas_linhas_#lin_e_#lin = titanic[titanic["#"].isin([#, #])]
-    # valores na coluna # linha # e #
+    # valores na coluna #col linha #lin e #lin
 
     solicitar_valores_nao_nulos_em_#col = df[df["#"].notna()]
 
