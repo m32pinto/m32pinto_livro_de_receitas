@@ -2,47 +2,31 @@
 
 Esse repositório servirá para facilitar a análise de dados, e criação de scripts, contém requisitos básicos para processamentos eficientes e boas práticas.
 
-## Procedimento padrão
-
-    # >>> Criar ambiente virtual.
-    python3 -m venv ambiente_virtual
-
-    # >>> Iniciar ambiente virtual.
-    source ambiente_virtual/bin/activate  
-
-    # >>> Criar requeriments.txt
-    # >> Nota: Crie antes o arquivo.
-    pip freeze > requirements.txt 
-
-    # >>>Instalar requirements de um projeto.
-    # >> Nota: Para projetos que já possuem um requeriments.txt.
-	pip3 install -r requirements.txt
-
-##  Cabeçalho e rodapé padrãos
+##  Cabeçalho e rodapé padrão
     """
-    📁 Nome do arquivo: | 👤 m32pinto | 🔄 Repyta 
+
+    📁 Nome do arquivo: | 👤 m32pinto | 🔄 Repyta |
     🎯 Objetivo
 
     """
 
-    # >>> CONFIG INICIAL.
+    # >>> CONFIG INICIAL
 
+    %matplotlib inline
+    import pandas as pd, matplotlib.pyplot as plt, os
+    plt.style.use('ggplot'); plt.rcParams['figure.figsize'] = (15, 5)
 
+    # >>> SEU CÓDIGO AQUI
 
+    $0
 
-    # >>> CÓDIGO.
-
-
-
-
-    # >>> FIM.
-    
-    """
-    Prompts:
-    """
+    # >>> FIM: ✅ OK | 🧪 Testar: [ ] Leitura [ ] Processamento [ ] Saída
 
 ## Importações.
 ### Sempre que inicar um projeto:
+
+    # Renderize nossos gráficos em linha
+    %matplotlib inline
 
     import pandas as pd
     import matplotlib.pyplot as plt
@@ -135,11 +119,6 @@ Esse repositório servirá para facilitar a análise de dados, e criação de sc
 [Os](https://docs.python.org/3/library/os.html)
 
 [Matplotlib](https://matplotlib.org/stable/)
-
-## Códigos interessantes para zorin os
-
-    # Apagar a tela
-    xset dpms force off
 
 
 
