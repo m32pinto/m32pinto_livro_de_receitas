@@ -12,19 +12,19 @@ O que aprenderemos
 #
 
     df = pd.read_#tipo("#local") 
-    # Leitura #tipo #local
+    # Leitura #tipo_de_arquivo #local
 
     print(df.head(#num)) 
-    # Impressão de dados brutos #num
+    # Impressão de dados brutos #num (Quantidade de linhas a serem impressas)
 
     print(#col.shape)
     #quantidades de linhas na coluna #col
 
     coluna_#col  = df["#col"]  
-    # Seleção de colunas específicas do dataframe
+    # Seleção de colunas específicas do dataframe #col
 
     tipos_de_valores_em_#col = type(df["#col"])
-    # Solicitar o tipo de dado na colunas selecionada.
+    # Solicitar o tipo de dado na colunas selecionada. #col
 
     contagem_de_linhas_na_coluna_#col = df['#col'].shape
     # Solicitar quantidades de linhas na coluna.
