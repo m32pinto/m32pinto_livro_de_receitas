@@ -27,10 +27,10 @@ O que aprenderemos
     # Solicitar o tipo de dado na colunas selecionada. #col
 
     contagem_de_linhas_na_coluna_#col = df['#col'].shape
-    # Solicitar quantidades de linhas na coluna.
+    # Solicitar quantidades de linhas na coluna. #col
 
     selecao_de_colunas_#col_#col = df[["#col", "#col"]]
-    # Seleção de múlitplas colunas.
+    # Seleção de múlitplas colunas. #col #col
 
     solicitar_o_tipo_de_dado_contidos_nas_colunas_#col_#col_ = type(df[["#col", "#col"]])
     # Solicitar o tipo de dado nas colunas selecionadas.
