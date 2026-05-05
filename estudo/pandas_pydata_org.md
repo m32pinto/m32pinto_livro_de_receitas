@@ -39,15 +39,16 @@ O que aprenderemos
     # Solicitar quantidades de linhas e colunas no dataframe. #col #col
 
     solicitar_em_#col_valores_maiores_que_#num = df[df["#"] > #num]
-    #Estou interessado nos valores maiores que 35 dessa coluna imprima todos. #com #num
+    # Estou interessado nos valores maiores que 35 dessa coluna imprima todos. #com #num
 
     solicitar_em_#col_valores_maiores_que_#num_saida_em_booleanos = df["#"] > #num]
-    #Estou interessado nos valores maiores que 35 dessa coluna imprima todos saída em booleanos. #col #num
+    # Estou interessado nos valores maiores que 35 dessa coluna imprima todos saída em booleanos. #col #num
 
     valores_na_coluna_#col_nas_linhas_#lin_e_#lin = titanic[titanic["#"].isin([#, #])]
-    # valores na coluna #col linha #lin e #lin
+    # Valores na coluna #col linha #lin e #lin
 
     solicitar_valores_nao_nulos_em_#col = df[df["#"].notna()]
+    # Solicitar valores não nulos em #col 
 
     quantidade_de_valores_nao_nulos_em_# = df[df["#"].notna()]
     # Retornar quantidade de linhas e colunas que contém valores não nulos em #col
