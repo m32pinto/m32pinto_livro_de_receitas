@@ -33,16 +33,16 @@ O que aprenderemos
     # Seleção de múlitplas colunas. #col #col
 
     solicitar_o_tipo_de_dado_contidos_nas_colunas_#col_#col_ = type(df[["#col", "#col"]])
-    # Solicitar o tipo de dado nas colunas selecionadas.
+    # Solicitar o tipo de dado nas colunas selecionadas. #col
 
     solicitar_quantidade_de_linhas_e_colunas_em_#col = df[["#", "#"]].shape
-    # Solicitar quantidades de linhas e colunas no dataframe.
+    # Solicitar quantidades de linhas e colunas no dataframe. #col #col
 
-    solicitar_em_#col_valores_maiores_que_#num = df[df["#"] > #]
-    #Estou interessado nos valores maiores que 35 dessa coluna imprima todos.
+    solicitar_em_#col_valores_maiores_que_#num = df[df["#"] > #num]
+    #Estou interessado nos valores maiores que 35 dessa coluna imprima todos. #com #nim
 
-    solicitar_em_#col_valores_maiores_que_#num_booleanos = ddf["#"] > #]
-    #Estou interessado nos valores maiores que 35 dessa coluna imprima todos saída em booleanos.
+    solicitar_em_#col_valores_maiores_que_#num_saida_em_booleanos = df["#"] > #num]
+    #Estou interessado nos valores maiores que 35 dessa coluna imprima todos saída em booleanos. #col #num
 
     valores_na_coluna_#col_nas_linhas_#lin_e_#lin = titanic[titanic["#"].isin([#, #])]
     # valores na coluna # linha # e #
