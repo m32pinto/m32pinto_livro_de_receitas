@@ -8,14 +8,27 @@ Esse repositório servirá para facilitar a análise de dados, e criação de sc
     📁 Nome do arquivo: | 👤 m32pinto | 🔄 Repyta |
     🎯 Objetivo
 
+    1-Crie o ambiente virtual com o comando:
+
+    python3 -m venv ambiente_virtual
+    
+    2-Ative o ambiente virtual:
+    
+    source nome_do_ambiente/bin/activate
+
+    1-Gere o arquivo rquirements.txt com o comando:
+
+    pip freeze > requirements.txt
+    
+    2-Instalar dependências a partir do requirements.txt
+    
+    pip install -r requirements.txt
+
     """
 
     # >>> CONFIG INICIAL
 
-    %matplotlib inline
     import pandas as pd, matplotlib.pyplot as plt, os
-    plt.style.use('ggplot'); plt.rcParams['figure.figsize'] = (15, 5)
-
     # >>> SEU CÓDIGO AQUI
 
     $0
