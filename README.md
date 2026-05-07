@@ -120,6 +120,6 @@ Esse repositório servirá para facilitar a análise de dados, e criação de sc
 
 [Matplotlib](https://matplotlib.org/stable/)
 
-
+[Jupyter](https://docs.jupyter.org/en/latest/index.html)
 
 
