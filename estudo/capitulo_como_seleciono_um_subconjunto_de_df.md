@@ -4,7 +4,7 @@
 
 
 ##  Capítulo Como seleciono um subconjunto de df ? 
-O que aprenderemos
+O que aprenderemos :
 
 - Leitura. (Armazenar todo(s) o(s) documento(s)). => read
 - Impressão de dados brutos. => head
