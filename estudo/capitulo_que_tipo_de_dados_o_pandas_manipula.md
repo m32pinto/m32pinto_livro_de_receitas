@@ -8,7 +8,8 @@ O que aprenderemos
 - Armazenar o maior valor da série.
 - Armazenar (Quantidade de valores, Média, valor mínimo e máximo...) estatistica básica).
 
-     
+#
+
     df = pd.DataFrame(
         {
             "#col": ["#str","#str","#str",],
