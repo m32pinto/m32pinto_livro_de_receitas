@@ -8,6 +8,8 @@
 - Armazenar tipos de dados nas colunas.
 - Exoprtar documentos 
 
+#
+
     df = pd.read_#tipo("#local_do_arquivo")
     # Leitura (amazenar dataframe em memoria).
 
