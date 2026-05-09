@@ -5,3 +5,18 @@
 
 ##  Capítulo Como eu crio gráficos em pandas?
 O que aprenderemos :
+
+- Importar biblioteca de gráficos.
+- Parametrizar a leitura. => index_col=#num ; parse_date=#bol
+
+#
+
+    import matplotlib.pyplot as plt
+    # Biblioteca pra análise de gráficos
+
+    df = pd.read_#tipo("#local_do_arquivo", index_col=0, parse_dates=#bol)
+    # index_col = 0 define a primeira coluna como índice.
+    # parse_date = True converte a data em objetos em timestamp.
+
+    
+
