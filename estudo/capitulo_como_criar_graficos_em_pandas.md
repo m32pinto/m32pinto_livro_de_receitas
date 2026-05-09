@@ -8,8 +8,8 @@ O que aprenderemos :
 
 - Importar biblioteca de gráficos.
 - Parametrizar a leitura. => index_col=#num ; parse_date=#bol
-- Checagem visual simples. 
-- Plotar somente a data e mostrar o gráfico.
+- Checagem visual simples. Plotar somente a data e mostrar o gráfico.
+- 
 -
 
 #
