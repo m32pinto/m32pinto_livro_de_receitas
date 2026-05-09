@@ -8,9 +8,10 @@ O que aprenderemos :
 
 - Importar biblioteca de gráficos.
 - Armazenar paremeteos de leitura. => index_col=#num ; parse_date=#bol
-- Armazenar grafico de Checagem visual simples. Plotar somente a data e mostrar o gráfico.
-- Armazenar gráfixo de Comparação visual de valores.
+- Armazenar grafico de Checagem visual simples. Plotar somente a data e mostrar o gráfico. (Linha riscada)
+- Armazenar gráfixo de Comparação visual de valores. (Pontilhados)
 - Amarmazenar métodos de plotagem disponíveis.
+- Armazenar gráfico box (caixa com pontos ordenados)
 
 #
 
@@ -26,14 +27,18 @@ O que aprenderemos :
 
     df.plot.scatter(x="#col", y="#col", alpha=#num)
     # comparação visual de valores
-
+    
+    
     metodos_disponíveis = 
             [
             method_name
             for method_name in dir(df.plot)
             if not method_name.startswith("_")
             ]
-   # amarmazenar métodos de plotagem disponíveis
+    # armazenar métodos de plotagem disponíveis
+
+    df.plot.box()
+
 
 
     
