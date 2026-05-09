@@ -119,7 +119,7 @@ Esse repositório servirá para facilitar a análise de dados, e criação de sc
 
     print(f"\n✅ Dados consolidados! Total de linhas: {len(df)}")
 
-## Bibliotecas muito interessantes:
+## Referências e Bibliotecas muito interessantes:
 
 [Phonenumbers](https://pypi.org/project/phonenumbers/)
 
@@ -134,5 +134,7 @@ Esse repositório servirá para facilitar a análise de dados, e criação de sc
 [Matplotlib](https://matplotlib.org/stable/)
 
 [Jupyter](https://docs.jupyter.org/en/latest/index.html)
+
+[Pandas](https://pandas.pydata.org/)
 
 
