@@ -9,7 +9,7 @@ O que aprenderemos :
 - Importar biblioteca de gráficos.
 - Parametrizar a leitura. => index_col=#num ; parse_date=#bol
 - Checagem visual simples. Plotar somente a data e mostrar o gráfico.
-- 
+- Comparação visual de valores.
 -
 
 #
@@ -23,6 +23,9 @@ O que aprenderemos :
 
     df.plot() # plotar somente a data
     plt.show() # mostra os gráficos
+
+    df.plot.scatter(x="#col", y="#col", alpha=#num)
+    # comparação visual de valores
     
 
     
