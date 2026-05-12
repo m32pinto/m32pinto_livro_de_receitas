@@ -38,6 +38,7 @@ O que aprenderemos :
     # armazenar métodos de plotagem disponíveis
 
     df.plot.box()
+    # Armazenar gráfico box
 
 
 
