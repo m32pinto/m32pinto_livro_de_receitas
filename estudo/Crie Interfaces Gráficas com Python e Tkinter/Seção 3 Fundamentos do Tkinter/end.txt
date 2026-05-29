@@ -1,1 +1,10 @@
+Sumário.
 
+1- Criar janela principal (root) e (Tk).
+2- Acrescentar texto (Label) janela principal (root).
+3- Acrescentar título a janela principal (title).
+4- Tamanho e posição da tela (geometry).
+5- Configurar janela no centro da tela (winfo_screen).
+6- Configurar se é possível o redimensionamento (resize).
+7- Configurar tamanho mínimo e máximo (min e max).
+8- Configurar transparência (alpha).
