@@ -1,4 +1,4 @@
-# m32pinto livro de receitas.
+# m32pinto, o estudo.
 
 Esse repositório servirá para facilitar a análise de dados, e criação de scripts, contém requisitos básicos para processamentos eficientes e boas práticas.
 
